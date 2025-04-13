@@ -3,12 +3,11 @@
   "name": "disease-insight-server",
   "version": "1.0.0",
   "description": "Backend server for Disease Insight application",
-  "main": "index.js",
-  "type": "module",
+  "main": "index.ts",
   "scripts": {
-    "dev:server": "nodemon index.js",
-    "start:server": "node start.js",
-    "build": "echo 'No build step needed for JavaScript'"
+    "dev:server": "nodemon --exec ts-node index.ts",
+    "start:server": "ts-node start.ts",
+    "build": "tsc"
   },
   "engines": {
     "node": ">=18"
