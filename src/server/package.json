@@ -1,0 +1,15 @@
+
+{
+  "name": "disease-insight-server",
+  "version": "1.0.0",
+  "description": "Backend server for Disease Insight application",
+  "main": "index.ts",
+  "scripts": {
+    "dev:server": "nodemon --exec ts-node index.ts",
+    "start:server": "ts-node start.ts",
+    "build": "tsc"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
